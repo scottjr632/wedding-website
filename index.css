@@ -67,6 +67,18 @@ ul li {
   border-radius: 5px;
 }
 
+@media only screen and (max-width: 900px) {
+  .container {
+	grid-template-columns: [main] auto; 
+  }
+}
+
+.ven-img {
+  float: right; 
+  max-height: 50vh; 
+  max-width: 40%;	
+}
+
 .gallery-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -255,7 +267,34 @@ ul li {
 }
 
 
+@media only screen and (max-width: 480px) {
+  .full {
+	height: auto;
+  }
+  .main img {
+	height: auto;  
+  }
+  .stats {
+	transform: translateY(-100%);
+    height: auto;	
+  }
+  .ven-img {
+	max-width: none;  
+  }
+  .ven-img img {
+	width: 100%;
+  }
+  .ven-img img {
+	width: 100% !important;
+	height: 100% !important;
+	transform: translateY(100%) !important;
+	  
+  }
+  #gallery {
+	display: none;  
+  }
 
+}
 
 
 
