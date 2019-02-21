@@ -134,7 +134,7 @@ ul li {
     content: "";
     position: absolute;
     margin: 0 auto;
-    width: 50px;
+    width: 60px;
     border-bottom: 1px solid black;
 }
 
@@ -153,6 +153,7 @@ ul li {
 
 .pull-right {
   float: right;
+  padding-left: 0px; 
 }
 
 .pull-left {
@@ -275,11 +276,12 @@ ul li {
 	height: auto;  
   }
   .stats {
-	transform: translateY(-100%);
+	transform: translateY(-79%);
     height: auto;	
   }
   .ven-img {
-	max-width: none;  
+    max-width: none;  
+    transform: translateY(30%);
   }
   .ven-img img {
 	width: 100%;
@@ -293,7 +295,12 @@ ul li {
   #gallery {
 	display: none;  
   }
+}
 
+@media only screen and (max-width: 575px) {
+  nav .pull-right {
+    float: left;
+  }
 }
 
 
